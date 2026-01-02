@@ -14,7 +14,7 @@
 <!-- Swiper CSS -->
 <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-<!-- YOUR CSS -->
+<!-- Custom CSS -->
 <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -34,15 +34,112 @@
   </nav>
 </header>
 
-<!-- (KEEP ALL YOUR HTML CONTENT EXACTLY THE SAME HERE) -->
+<main id="home" class="hero">
+  <div class="hero-text">
+    <h2 class="subheading"><span id="typing-text"></span></h2>
+    <p>
+      A Computer Science graduate specialized in Intelligent Systems, I build interactive and efficient web
+      experiences using Python, Java, C#, PHP, HTML/CSS/JS, and Node.js. Skilled in automation, Make.com workflows,
+      and web scraping, I turn complex problems into polished, functional, and user-friendly digital solutions.
+    </p>
+    <div class="button-group">
+      <a href="#projects" class="btn">Explore My Work</a>
+      <a href="resume.pdf" class="btn" target="_blank">Download Resume</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="avatar">
+      <img src="avatar.png" alt="Elieza Anne">
+    </div>
+  </div>
+</main>
 
-<!-- LIBRARIES -->
+<section id="about" class="about-me">
+  <div class="about-container-3d">
+    <div class="neon-card-3d" data-tilt>
+      <h2 class="card-title">Work Experience</h2>
+
+      <div class="timeline-item">
+        <p class="timeline-role">Data Analyst & Programmer VA</p>
+        <p class="timeline-company">In Print We Trust / Orchard | UK</p>
+        <p class="timeline-date">June 2025 – Present</p>
+      </div>
+
+      <div class="timeline-item">
+        <p class="timeline-role">Transfer / Inbound Encoder</p>
+        <p class="timeline-company">Fast Logistic (RFM)</p>
+        <p class="timeline-date">Jan – Mar 2025</p>
+      </div>
+    </div>
+
+    <div class="neon-card-3d" data-tilt>
+      <h2 class="card-title">Education</h2>
+      <div class="timeline-item">
+        <p class="timeline-role">BS Computer Science</p>
+        <p class="timeline-company">LSPU Los Baños</p>
+        <p class="timeline-date">2020–2024</p>
+      </div>
+
+      <hr class="neon-divider">
+
+      <h2 class="card-title">Skills</h2>
+      <div class="skills-3d">
+        <span class="skill">Python</span>
+        <span class="skill">Java</span>
+        <span class="skill">C#</span>
+        <span class="skill">PHP</span>
+        <span class="skill">HTML/CSS/JS</span>
+        <span class="skill">Node.js</span>
+        <span class="skill">Web Scraping</span>
+        <span class="skill">Automation & APIs</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">My Projects</h2>
+  <div class="projects-container">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="project-card" data-project-images='["images/project1.png"]'>
+            <h3 class="project-title">Google Drive Automation</h3>
+            <p class="project-description">
+              Automated Google Drive folder creation via Google Sheets.
+            </p>
+            <div class="project-links">
+              <a class="btn view-gallery">View Gallery</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</section>
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <a class="prev">&#10094;</a>
+  <a class="next">&#10095;</a>
+  <div class="modal-content">
+    <img class="modal-image" id="modalImage">
+  </div>
+</div>
+
+<!-- Libraries -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-<!-- YOUR JS -->
+<!-- Custom JS -->
 <script src="js/main.js"></script>
 </body>
 </html>
